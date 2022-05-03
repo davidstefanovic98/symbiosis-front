@@ -28,9 +28,11 @@
             "inlineStyleLanguage": "scss",
             "baseHref": "/login/",
             "assets": [
-              "projects/login/src/favicon.ico",
-              "projects/login/src/assets"
-
+              {
+                "glob": "**/*",
+                "input": "./assets/",
+                "output": "assets/"
+              }
             ],
             "styles": [
               "projects/login/src/styles.scss"
@@ -132,8 +134,11 @@
             "tsConfig": "projects/login/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "projects/login/src/favicon.ico",
-              "projects/login/src/assets"
+              {
+                "glob": "**/*",
+                "input": "./assets/",
+                "output": "assets/"
+              }
             ],
             "styles": [
               "projects/login/src/styles.scss"

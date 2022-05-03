@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   baseUrl: "http://127.0.0.1:8080",
-  loginUrl: "http://127.0.0.1:3000/login",
+  loginUrl: "http://localhost:4201/login",
   adminUrl: "http://localhost:4202/admin"
 };
 

@@ -7,6 +7,7 @@ import {ReactiveFormsModule} from "@angular/forms";
 import {MaterialModule} from "../../../material.module";
 import {HttpClientModule} from "@angular/common/http";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {CommonModule} from "projects/common/src/app/common.module";
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
     BrowserAnimationsModule,
     LoginRoutingModule,
     ReactiveFormsModule,
+    CommonModule,
     HttpClientModule,
     MaterialModule
   ],
