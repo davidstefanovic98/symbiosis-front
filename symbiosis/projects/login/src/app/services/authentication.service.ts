@@ -15,7 +15,7 @@ export interface JwtToken {
 })
 export class AuthenticationService {
 
-  private static readonly USER_TOKEN: string = "tokenuljarkovic";
+  private static USER_TOKEN: string = "tokenuljarkovic";
 
   constructor(private httpClient: HttpClient) {
 
@@ -39,7 +39,6 @@ export class AuthenticationService {
   }
 
   private setToken(token: string) {
-    const decoded = AuthenticationService.decodeToken(token);
     localStorage.setItem(AuthenticationService.USER_TOKEN, token);
   }
 
@@ -63,6 +62,19 @@ export class AuthenticationService {
       window.location.href = environment.adminUrl;
     } else {
       // window.location.href = environment.loginUrl;
+    }
+  }
+
+  public logout() {
+    localStorage.removeItem(AuthenticationService.USER_TOKEN);
+    this.goToLogin();
+  }
+
+  private goToLogin() {
+    if (environment.production) {
+      window.open(`${location.origin}/${environment.loginUrl}`, "_self");
+    } else {
+      window.open(environment.loginUrl, "_self");
     }
   }
 }

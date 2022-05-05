@@ -4,8 +4,13 @@ import {AdminUsersComponent} from "./admin-users/admin-users.component";
 
 const routes: Routes = [
   {
-    path: "",
+    path: "users",
     component: AdminUsersComponent
+  },
+  {
+    path: "**",
+    redirectTo: '',
+    pathMatch: "full"
   },
 ];
 
@@ -13,4 +18,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AdminRoutingModule { }
+export class AppRoutingModule { }

@@ -1,0 +1,110 @@
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+mat-list#menu {
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: center;
+  user-select: none;
+
+  .logo {
+    cursor: pointer;
+    height: 64px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 1em;
+  }
+
+  mat-icon {
+    margin: 0 auto;
+  }
+
+  mat-list-item {
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1.2em !important;
+    transition: all 200ms ease-in;
+    color: #118DF0;
+
+    &:hover {
+      background-color: #118DF0;
+      color: white;
+    }
+
+    &.active {
+      background-color: #118DF0;
+      color: white;
+    }
+  }
+
+  mat-list-item.active {
+    color: whitesmoke;
+    background-color: #118DF0;
+  }
+
+  .mat-slide-toggle .mat-slide-toggle-content {
+    width: 100%;
+  }
+}
+
+mat-list#menu {
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: center;
+  user-select: none;
+
+  .isum-logo {
+    cursor: pointer;
+    height: 64px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 1em;
+  }
+
+  mat-icon {
+    margin: 0 auto;
+  }
+
+  mat-list-item {
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1.2em !important;
+  }
+
+  mat-list-item.active {
+    color: whitesmoke;
+    background-color: #118DF0;
+  }
+
+  .mat-slide-toggle .mat-slide-toggle-content {
+    width: 100%;
+  }
+}
+
+.tooltip {
+  font-size: 1em;
+  font-weight: bold;
+  color: white;
+  font-style: italic;
+}
+
+#menu .submenu-button {
+  transform: none !important;
+  font-size: 16px !important;
+}
+
+mat-sidenav {
+  text-align: center;
+}
+
+.menu span.mat-badge-content {
+  font-weight: bold;
+}
+
+mat-sidenav-content.mat-drawer-content.mat-sidenav-content {
+  transition: all 0.5s ease !important;
+}
+
+

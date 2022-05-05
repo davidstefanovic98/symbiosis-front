@@ -39,6 +39,7 @@ import {MatSliderModule} from "@angular/material/slider";
 import {MatBadgeModule} from "@angular/material/badge";
 import {MatBottomSheetModule} from "@angular/material/bottom-sheet";
 import {MatDialogModule} from "@angular/material/dialog";
+import {CommonModule} from "@angular/common";
 
 @NgModule({
   imports: [
@@ -73,7 +74,9 @@ import {MatDialogModule} from "@angular/material/dialog";
     MatTooltipModule,
     MatStepperModule,
     MatPaginatorModule,
-    DragDropModule
+    DragDropModule,
+    MatSidenavModule,
+    CommonModule,
   ],
   exports: [
     A11yModule,
@@ -118,9 +121,8 @@ import {MatDialogModule} from "@angular/material/dialog";
     MatPaginatorModule,
     PortalModule,
     ScrollingModule,
-    DragDropModule
-  ],
-  declarations: []
+    DragDropModule,
+  ]
 })
 
 export class MaterialModule {
